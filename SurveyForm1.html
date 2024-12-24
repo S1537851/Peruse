@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--
+		Paden Ruckman
+		Instructor McDavitt
+		CSIS 228
+		10/20/2024
+		
+		Survey/questionnaire form for the Photographer website.
+		It will gather the user questions and store them for review. 
+		The user will be allowed to do multiple survey forms. 
+		
+		Filename: SurveyForm1.html
+	-->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Pixel Journey</title>
+	<link rel="stylesheet" href="styles.css" />
+	<script src="SurveyForm.js" defer></script>
+	
+</head>
+<body> 
+	<div id="personInfo">
+		<h1> Welcome to the Pixel Journey survey form </h1>
+		<p> Please enter your personal information</p>
+		<!-- Form for collecting user personal information, with action leading to the next form page -->
+		<form id="customer" action="SurveyForm2.html" target="_self">
+			<label for="fName">First name:</label>
+			<input type="text" id="fName" name="fName"><br>
+			
+			<label for="lName">Last name:</label>
+			<input type="text" id="lName" name="lName"><br>
+			
+			<label for="age">Age:</label>
+			<input type="number" id="age" name="age" min="18" max="135"><br>
+			
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email"><br>
+			
+			<label for="contact">Contact Number:</label>
+			<input type="tel" id="contact" name="contact"><br>
+		<!-- Buttons section for resetting the form and submitting to the next page -->
+		<div class="buttons" id="buttons">
+			<button type="reset"  id="reset">Reset</button>
+			<button type="submit" id="nextPage1">Next Page</button>
+		</div>
+		
+	  </form>		
+	</div>
+</body>
+</html>

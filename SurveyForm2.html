@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--
+		Paden Ruckman
+		Instructor McDavitt
+		CSIS 228
+		10/20/2024
+		
+		Survey/questionnaire form for the Photographer website.
+		It will gather the user questions and store them for review. 
+		The user will be alloweed to do multiple survey forms. 
+		
+		Filename: SurveyForm2.html
+	-->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Pixel Journey</title>
+	<link rel="stylesheet" href="styles.css"/>
+	<script src="SurveyForm.js" defer></script>
+	
+</head>
+<body>
+  <div id="survey-form">
+    <h1>The Pixel Journey survey form</h1>
+	<p>Answer the questions below based on your experience.<p>
+	<!-- Form for collecting survey data with action leading to the next form page -->
+    <form action="SurveyForm3.html" target="_self">
+	
+	  <!-- Question about the package chosen by the user -->
+      <div class="question" id="package">
+        <label for="favorite-product">What package did you choose?</label>
+        <select id="favorite-product">
+		  <option value="" disabled selected>Select your package:</option>
+          <option value="package1">Package 1</option>
+          <option value="package2">Package 2</option>
+          <option value="package3">Package 3</option>
+        </select>
+      </div>
+	  
+	  <!-- Question about rating customer experience -->
+      <div class="question" id="experience">
+        <label for="customer-experience">How would you rate your customer experience?</label>
+        <select id="customer-experience">
+		  <option value="" disabled selected>Select your experience:</option>
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+          <option value="fair">Fair</option>
+          <option value="poor">Poor</option>
+        </select>
+      </div>
+	  
+	  <!-- Question about capturing the desired style or vision -->
+      <div class="question" id="capture">
+        <label for="yes1">Did the Photographer able to capture the style or vision you wanted?</label>
+        <input type="radio" id="yes1" name="capture" value="yes"> Yes
+        <input type="radio" id="no1" name="capture" value="no"> No
+      </div>
+	  
+	  <!-- Question about session start and end time -->
+	  <div class="question" id="startTime">
+        <label for="yes2">Did the session start and end on time?</label>
+        <input type="radio" id="yes2" name="startTime" value="yes"> Yes
+        <input type="radio" id="no2" name="startTime" value="no"> No
+      </div>
+	  
+	  <!-- Question about the appropriateness of the shoot location -->
+	  <div class="question" id="locationShoot">
+        <label for="yes3">Was the location of the shoot appropriate for your needs?</label>
+        <input type="radio" id="yes3" name="locationShoot" value="yes"> Yes
+        <input type="radio" id="no3" name="locationShoot" value="no"> No
+      </div>
+	  
+	  <!-- Buttons section for form reset, going to the previous page, and submitting to the next page -->
+	  <div>
+	    <button type="reset"  id="reset">Reset</button>
+	    <button type="button" id="previous" onclick="history.back()">Previous</button>
+	    <button type="submit" id="nextPage2">Next Page</button>
+      </div>
+	  
+    </form>
+  </div>
+</body>
+</html>

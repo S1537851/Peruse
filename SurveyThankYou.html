@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--
+		Paden Ruckman
+		Instructor McDavitt
+		CSIS 228
+		10/20/2024
+		
+		Survey/questionnaire form for the Photographer website.
+		It will gather the user questions and store them for review. 
+		The user will be alloweed to do multiple survey forms. 
+		
+		Filename: SurveyThankYou.html
+	-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="styles.css">
+	<script src="SurveyForm.js"></script>
+</head>
+<body>
+	<!-- Main container for the thank you message -->
+    <div id="survey-thank you">
+        <h1>Thank you for completing the survey!</h1>
+        <p>Your response has been recorded.</p>
+		<!-- Button to start a new survey by redirecting to SurveyForm1.html -->
+        <button onclick="window.location.href='SurveyForm1.html'">Start a New Survey</button>
+		<!-- Button to view all survey responses by triggering the viewResults function -->
+        <button onclick="viewResults()">View All Responses</button>
+    </div>
+	<!-- Container for displaying survey results, initially hidden -->
+    <div id="survey-results" style="display: none;">
+        <h1>Survey Responses</h1>
+        <ul id="responses-list"></ul>
+    </div>
+	<!-- Container for displaying detailed survey responses, initially hidden -->
+    <div id="survey-details" style="display: none;"></div>
+</body>
+</html>
