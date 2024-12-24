@@ -2,8 +2,6 @@
 
 /*
         Paden Ruckman
-        Instructor McDavitt
-        CSIS 228
         10/20/2024
         
         Survey/questionnaire form for the Photographer website.
