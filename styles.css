@@ -1,0 +1,258 @@
+body {
+    font-family: Arial, Tahoma, sans-serif;
+    font-size: 1.1em;
+    background-color: #eef4f1;
+}
+/* Header */
+header  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2f5d50;
+    border: 6px solid black;
+    font-size: 1.5em;
+}
+h1 {
+    font-family: 'playfair display', Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+#missouriState {
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    width: 125px;
+    height: auto;
+}
+/* Navigation */
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0px;
+    padding: 10px 0px;
+    background-color: #a6896f;
+}
+nav li {
+    margin: 0 75px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Hover effects for the navgation */
+nav a:hover {
+    color: gold;
+    text-decoration: underline;
+}
+/* Layout */
+main {
+    width: 70%;
+    float: left;
+    padding: 20px;
+    background-color: #f7f7f2;
+    border: 1px solid lightgray;
+}
+aside {
+    width: 25%;
+    float: right;
+    padding: 20px;
+    background-color: #cbb8a1;
+    grid-area: aside;
+}
+aside li {
+    margin: 0px;
+    padding: 25px 0px;
+}
+aside a {
+    color: black;
+}
+aside a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+footer {
+    clear: both;
+    padding: 10px;
+    margin: auto;
+    background-color: #3a2f2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a {
+    margin: 0;
+    padding: 0px 250px;
+}
+main, p {
+    line-height: 1.5em;
+}
+/* Sections */
+.welcome {
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+.intro {
+    position: relative;
+    margin-bottom: 50px;
+}
+.intro p {
+    margin-bottom: 50px;
+    padding-left: 5px;
+}
+.intro div h4{
+    margin: auto;
+    padding: 5px;
+}
+.intro div p {
+    margin: auto;
+    text-indent: 10px;
+}
+#population {
+    color: black;
+    text-decoration: none;
+}
+#population:hover {
+    color: blue;
+    text-decoration: underline;
+}
+.economic {
+    margin: 100px 0px;
+}
+/* Image sizing */
+#WDV{
+    margin: 0;
+    padding: 10px 10px;
+    float: right;
+    width: 200px;
+}
+#capital {
+    margin: 0;
+    padding: 10px 10px;
+    float: right;
+    width: 300px;
+}
+#KC {
+    margin: 0;
+    padding: 10px 10px;
+    float: right;
+    width: 400px;
+}
+#Louis {
+    margin: 0;
+    padding: 10px 10px;
+    float: right;
+    width: 500px;
+}
+/* Table Styling */
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+    background-color: lightgray;
+}
+th {
+    border: 1px solid black;
+    text-align: center;
+}
+.level th {
+    padding: 8px;
+}
+td {
+   border: 1px solid black; 
+   text-align: center;
+}
+tr:nth-child(even) {
+    background-color: darkgray;
+}
+/* The living cost link */
+th a {
+    color: black;
+    text-decoration: none;
+}
+th a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+caption a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+caption a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+caption {
+    padding: 10px;
+}
+/* Contact Form */
+main.contact {
+    float: none;
+    width: auto;
+}
+#form {
+    padding: 5px;
+    font-weight: bold;
+}
+#contact {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+#contact:hover {
+    color: gold;
+    text-decoration: underline;
+}
+form {
+    margin: auto;
+    padding: 25px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin: 12px 0 6px;
+    padding: 5px;
+}
+#submit {
+    font-weight: bold;
+    width: auto;
+    cursor: pointer;
+    font-size: .8em;
+    margin-top: 20px;
+}
+#submit:hover {
+    background-color: #02c92d;
+}
+/* Sources */
+#sources {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+#sources:hover {
+    color: gold;
+    text-decoration: underline;
+}
+#resources {
+    padding: 5px;
+    font-weight: bold;
+}
+main.source {
+    float: none;
+    width: auto;
+}
+/* Thank You */
+#thankYou {
+    display: none;
+    text-align: center;
+    margin: auto;
+}
+#thankYou img {
+    width: 300px;
+}

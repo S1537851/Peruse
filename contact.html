@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header id="form">Form</header>
+    <nav class="nav">
+            <ul>
+                <li><a href="index.html" alt="home">Home</a></li>
+                <li><a href="capital.html" alt="capital">Capital</a></li>
+                <li><a href="kansasCity.html" alt="kansasCity">Kansas City</a></li>
+                <li><a href="stLouis.html" alt="stLouis">St. Louis</a></li>
+            </ul>
+    </nav>
+    <main class="contact">
+        <h2>Contact Us</h2>
+        <p>Please fill out the form below if you have any questions.</p>
+        <form onsubmit="return checkEmail();">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="confirmEmail">Confirm Email:</label>
+            <input type="email" id="confirmEmail" name="confirmEmail" required>
+
+            <label for="question">Question:</label>
+            <textarea id="question" name="question" rows="5" cols="40"></textarea><br>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </main>
+    <div id="thankYou">
+        <h2>Your form has been received!</h2>
+        <img src="thankyou.jpg" alt="Thank You Message">
+    </div>
+    <script>
+        function checkEmail() {
+            var email = document.getElementById("email").value;
+            var confirmEmail = document.getElementById("confirmEmail").value;
+
+            if (email !== confirmEmail) {
+                alert("The email does not match. Please try again.");
+                return false;
+            }
+            
+            // Hides the form section.
+            document.querySelector(".contact").style.display = "none";
+            // Shows the thank you message.
+            document.getElementById("thankYou").style.display = "block";
+
+            return false;
+        }
+    </script>
+</body>
+<footer>
+    <a href="sources.html" id="sources">Sources</a>
+</footer>
+</html>
